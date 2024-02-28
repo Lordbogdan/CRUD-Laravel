@@ -17,6 +17,7 @@ class TaskController extends Controller
             'description' => $request->json('description'),
             'deadline' => $request->json('deadline'),
             'comment' => $request->json('comment'),
+            'status' => $request->json('status'),
         ]);
 
         $task->save();
